@@ -1,0 +1,274 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*--------general css--------*/
+body {
+    background-image: url("img/1511.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*grid*/
+.bigby {
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 1rem;
+
+    grid-template-columns: 1fr;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: scale(1.03);
+
+}
+
+.pic {
+    border: 10px solid #FFB024;
+    filter: grayscale(70%);
+
+
+}
+
+.pic:hover {
+    border: 10px solid #FFFC15;
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+/*title*/
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Notable', sans-serif;
+    color: #FFB024;
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+h1:hover {
+    color: #FFFFFF;
+    text-shadow: 2px 2px #FFB024;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 50%;
+    height: 80px;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+/*--------modal--------*/
+.popUp {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    background-size: cover;
+    margin: 10% auto;
+    width: 60%;
+    position: relative;
+    text-align: center;
+}
+
+.infoText {
+    color: white;
+    text-shadow: 2px 2px #FFB024;
+    position: absolute;
+    bottom: 30px;
+    left: 16px;
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.close {
+    color: #aaa;
+    padding-right: 10px;
+    float: right;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*--------tablet view--------*/
+@media (min-width: 480px) {
+    .bigby {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .infoText {
+        font-size: 4rem;
+    }
+}
+
+/*--------Desktop view--------*/
+@media (min-width: 770px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .bigby {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

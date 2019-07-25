@@ -1,0 +1,6 @@
+Create a README.md file and save it in the root of your site. Inside the file include a brief description on how you created your interactive gallery and your reasoning for your design choice. Your reflection should include what challenges you faced during development and how you overcame those changes and explain what you learned by creating your interactive gallery.
+
+
+
+
+i created this gallery slowly and step by step starting with building the grid and making it responsive and can size well.next i worked on inserting the images through javascript. after i got the pictures working and responsive i styled my gallery making it look nice and clean. next came the most challenging part for me adding the interactive elements to my gallery, i could only get the pictures to display not the thumbnails when clicked clicking again will bring you back to the gallery. i tried to go for a more vector design having sharp shapes as the background and sharp bold fonts. i had alot of trouble finding the infromation i needed to get the eventlisnener to work with the grid spent lots of time googleing but eventually found some good help that pointed me in the right direction.
